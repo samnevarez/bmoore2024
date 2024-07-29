@@ -1,0 +1,61 @@
+@media (min-width: 992px) {
+    #mainNav {
+      font-family: $tertiary-font;
+      font-size: 16px;
+      line-height: auto;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $default-black-base;
+      height: 56px;
+      padding: 0;
+
+      img {
+        height: 32px;
+      }
+      
+    }
+
+    #mainNav .nav-link {
+      transition: none;
+      padding: 1rem 1.5rem;
+      color: $default-black-base;
+      transition: .5s;
+      
+    }
+    #mainNav .nav-link:hover {
+      color: $default-black-base;
+    }
+    #mainNav .nav-link:active {
+      color: $default-black-base;
+    }
+    #mainNav.navbar-shrink {
+      background-color: $default-white-base;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+      color: $default-black-base;
+      &:hover{
+        color: $default-black-base;
+      }
+    }
+    #mainNav.navbar-shrink .nav-link {
+      font-family: $tertiary-font;
+      font-weight: 500;
+      color: $default-black-base;
+      outline: none;
+      border-bottom: 4px solid transparent;
+    }
+    #mainNav.navbar-shrink .nav-link:hover {
+      color: darken($light-prim-base, 20%);
+      outline: none;
+      border-bottom: 4px solid transparent;
+    }
+    #mainNav.navbar-shrink .nav-link:active {
+      color: $default-black-base;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+      color: darken($light-prim-base, 20%);
+      outline: none;
+      border-bottom: 4px solid darken($light-prim-base, 20%);
+  }
+}
