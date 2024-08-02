@@ -65,15 +65,15 @@ body {
     line-height: 1.25rem;
   }
 
-  @media screen and (max-width: 992px) {
+  // @media screen and (max-width: 992px) {
 
-    @for $i from 1 through 4 {
-      h#{5 - $i} {
-          font-size: $i * .875rem;
-          line-height: $i * .875rem;
-      }
-    }
-  }
+  //   @for $i from 1 through 4 {
+  //     h#{5 - $i} {
+  //         font-size: $i * .875rem;
+  //         line-height: $i * .875rem;
+  //     }
+  //   }
+  // }
 
 }
 
