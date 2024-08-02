@@ -5,27 +5,27 @@ $secondary-font: 'Lato', sans-serif;
 $tertiary-font: 'Lato', sans-serif;
 
 $white: #fff !default;
-$black: #1d1d1d !default;
+$black: #222222 !default;
 
 /* Default Colors */
-$default-black-base: #2b296c !default;
+$default-black-base: #1c3d51 !default;
 $default-white-base: #fff !default;
 
 /* Dark Primary */
-$dark-prim-base: #2A283F !default;
+$dark-prim-base: #26546F !default;
 $dark-prim-10l: lighten($dark-prim-base, 10%);
 $dark-prim-5d: darken($dark-prim-base, 5%);
 $dark-prim-10d: darken($dark-prim-base, 15%);
 $dark-prim-20d: darken($dark-prim-base, 20%);
 
 /* Dark Secondary */
-$dark-sec-base: #232074 !default;
+$dark-sec-base: #26546F !default;
 $dark-sec-10l: lighten($dark-sec-base, 10%);
 $dark-sec-10d: darken($dark-sec-base, 10%);
 $dark-sec-15d: darken($dark-sec-base, 15%);
 
 /* Light Primary */
-$light-prim-base: #abf9ff !default;
+$light-prim-base: #E34045 !default;
 $light-prim-10l: lighten($light-prim-base, 10%);
 $light-prim-5d: darken($light-prim-base, 5%);
 $light-prim-10d: darken($light-prim-base, 10%);
@@ -36,7 +36,7 @@ $light-sec-10l: lighten($light-sec-base, 10%);
 $light-sec-10d: darken($light-sec-base, 10%);
 
 /* Interactive dark */
-$dark-interactive-prim-base: #F73964 !default;
+$dark-interactive-prim-base: #E34045 !default;
 $dark-interactive-prim-10l: lighten($dark-interactive-prim-base, 10%);
 $dark-interactive-prim-10d: darken($dark-interactive-prim-base, 10%);
 
@@ -46,7 +46,7 @@ $light-interactive-prim-10l: lighten($light-interactive-prim-base, 10%);
 $light-interactive-prim-10d: darken($light-interactive-prim-base, 10%);
 
 .dsbc {
-    background: $dark-prim-10l !important;
+    background: linear-gradient(to left, #26546F 50%, #E34045 50%);
     color: $default-white-base !important;
 
     h1, h2, h3, h4, h5, h6 {

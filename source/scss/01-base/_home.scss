@@ -1,5 +1,4 @@
 .header-bg {
-    background: radial-gradient(at 66% 50%, $default-white-base, #f4f4f4);
     z-index: 0;
 }
 
@@ -13,10 +12,12 @@
     display: inline-block;
     font-size: 1.95rem;
     font-size: 1.95rem;
-    color: $light-prim-base;
-    background-color: $default-black-base;
-    padding: 10px 15px 12px 15px; 
+    color: $white;
+    background: $dark-prim-base;
+    width: 100%;
+    padding: 12px 20px 17px 20px; 
     animation-duration: 2s;
+    border-radius: 4px;
 }
 
 .home-description {

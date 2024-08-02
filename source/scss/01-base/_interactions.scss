@@ -1,26 +1,31 @@
 // Button styles
 
-.ecbtn-primary {
-  background: #F73964;
-  color: $white;
+/* Base button class for sizing and spacing rules */
+.ecbtn-btn-base {
   padding: 1rem;
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0;
   border: 0;
-  box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.2);
   transition: all .25s ease 0s;
   outline: none;
   border-radius: 32px;
-  min-width: 120px;
+  min-width: 140px;
   text-decoration: none !important;
   text-align: center;
   display: inline-block;
+}
+
+/* Primary button class for color-related rules */
+.ecbtn-primary {
+  background: $dark-interactive-prim-base;
+  color: $white;
 
   &:hover {
     color: $white;
-    background-color: #cd3e5f;
+    background-color: lighten($dark-interactive-prim-base, 10%);
     box-shadow: 0 16px 12px -12px rgba(0, 0, 0, 0.3) !important;
     transform: translateY(-2px);
     transition: all .25s ease-in-out;
@@ -29,7 +34,7 @@
   
   &:focus {
     color: $white;
-    background-color: #fb4b74;
+    background-color: lighten($dark-interactive-prim-base, 10%);
     box-shadow: 0 16px 12px -12px rgba(0, 0, 0, 0.3) !important;
     outline: none;
     transition: all .25s ease-in-out;
@@ -38,7 +43,7 @@
 
   &:active {
     color: $white;
-    background-color: #c33858;
+    background-color: darken($dark-interactive-prim-base, 10%);
     box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.7) !important;
     transform: translateY(1px);
     transition-duration: 0s;
@@ -49,6 +54,17 @@
 
 .ecbtn-primary:not(:disabled):not(.disabled).active {
   border-color: none;
+}
+
+.ecbtn-ghost {
+  background: transparent;
+  border: 2px solid $dark-interactive-prim-base;; /* Border color */
+  color: $dark-interactive-prim-base; /* Text color */
+}
+
+.ecbtn-ghost:hover {
+  background: $dark-interactive-prim-base; /* Background color on hover */
+  color: $white; /* Text color on hover */
 }
 
 // Link Styles
