@@ -1,4 +1,10 @@
 /* mobile style */
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  border: solid 1px white !important;
+  color: $white;
+}
+
 #mainNav {
   color: $default-black-base;
   min-height: 56px;
@@ -38,14 +44,13 @@
 
   .navbar-nav {
     font-family: $tertiary-font;
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 18px;
     font-weight: 500;
 
     li.nav-item {
       a.nav-link {
-        color: $default-black-base;
-        padding: 2rem 0 2rem 1rem;
+        color: $white;
+        padding: 1rem 2rem 1rem 0;
       }
     }
   }
@@ -53,10 +58,31 @@
 
 .navbar-dark .navbar-nav .nav-link {
     transition: 0.5s;
-    padding: 2rem 1rem;
-    color: darken($dark-interactive-prim-base, 30%) !important;
+    padding: 1rem 1rem;
 
     &:hover {
       color: $light-interactive-prim-base;
     }
+}
+
+#navbar-top {
+  transition: all 0.6s ease;
+  height: auto;
+  background-color: $default-black-base !important;
+  color: $white;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 56px;
+  z-index: 1020;
+}
+
+.navbar-toggler-icon {
+  color: $default-black-base !important;
+  border-color: $default-black-base;
+}
+
+.main-content {
+  padding-top: 56px; /* Adjust this value if your navbar height is different */
 }
